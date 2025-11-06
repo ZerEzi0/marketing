@@ -1,4 +1,4 @@
-# Прогнозирование покупок в интернет-магазине одежды  
+# Прогнозирование покупок в интернет-магазине  
 **Цель проекта:** предсказать вероятность покупки клиентом в течение **90 дней**  
 **Метрика:** `roc_auc` → **0.6568** (CatBoost)  
 
@@ -10,11 +10,11 @@
 ---
 
 ## Данные  
-| Файл | Описание |
+Файл | Описание
 
-| `apparel-purchases.csv` | История покупок: `client_id`, `quantity`, `price`, `category_ids`, `date`, `message_id` |
-| `apparel-messages.csv` | Рассылки: `bulk_campaign_id`, `event` (send, open, click, purchase), `channel` (email/sms), `created_at` |
-| `apparel-target_binary.csv` | Целевой признак: `target` — покупка в следующие 90 дней |
+- `apparel-purchases.csv` - История покупок: `client_id`, `quantity`, `price`, `category_ids`, `date`, `message_id` 
+- `apparel-messages.csv` - Рассылки: `bulk_campaign_id`, `event` (send, open, click, purchase), `channel` (email/sms), `created_at` |
+- `apparel-target_binary.csv` - Целевой признак: `target` — покупка в следующие 90 дней |
 
 > **Важно:** `category_ids` — вложенные категории в виде строки `['4', '28', '57']`. Нумерация **сквозная** по всем уровням.
 
@@ -33,8 +33,8 @@
 
 ```bash
 # 1. Клонировать репозиторий
-git clone https://github.com/yourname/marketing-purchase-prediction.git
-cd marketing-purchase-prediction
+git clone https://github.com/ZerEzi0/marketing
+cd marketing
 
 # 2. Создать окружение
 python -m venv venv
