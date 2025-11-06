@@ -13,8 +13,8 @@
 Файл | Описание
 
 - `apparel-purchases.csv` - История покупок: `client_id`, `quantity`, `price`, `category_ids`, `date`, `message_id` 
-- `apparel-messages.csv` - Рассылки: `bulk_campaign_id`, `event` (send, open, click, purchase), `channel` (email/sms), `created_at` |
-- `apparel-target_binary.csv` - Целевой признак: `target` — покупка в следующие 90 дней |
+- `apparel-messages.csv` - Рассылки: `bulk_campaign_id`, `event`, `channel`, `created_at` 
+- `apparel-target_binary.csv` - Целевой признак: `target` — покупка в следующие 90 дней 
 
 > **Важно:** `category_ids` — вложенные категории в виде строки `['4', '28', '57']`. Нумерация **сквозная** по всем уровням.
 
